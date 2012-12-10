@@ -116,4 +116,77 @@ canvas {
 	speak: none;
 }
 
+.bo {font-weight: bold}
+.reg {font-weight: 300}
+.med {font-weight: 400}
+.lite {font-weight: 200}
+.xlite {font-weight: 100}
+
+.em {font-style: italic}
+.caps {text-transform: uppercase}
+.lower {text-transform: lowercase}
+.ttn {text-transform: none}
+
+.tac {text-align: center}
+.tar {text-align: right}
+.tal {text-align: left}
+
+.tdn,
+.tdn * {text-decoration: none !important}
+
+.tdu {text-decoration: underline}
+
+.txt-shad,
+.txt-shad * {
+	text-shadow: 0 0 6px rgba(0,0,0,1)
+}
+
+
+/* =============================================================================
+	Layout
+   ========================================================================== */
+   
+.block,
+.block *,
+.block-ps:after,
+.block-ps:before,
+.block-ps *:after,
+.block-ps *:before {display: block}
+
+.none {display: none}
+
+.pr {position: relative}
+.fl, .alignleft {float: left}
+.fr, .alignright {float: right}
+.center {margin: 0 auto}
+
+.clear {clear: both}
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+} 
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+.nav-hor li {float: left}
+.nav-hor li:first-child {padding-left: 0; margin-left: auto}
+
+.img-fluid img,
+img.img-fluid {
+	width:100%;
+	max-width: 3000/@em;
+	height: auto;
+	display:block
+}
+
+
 @import 'global.less';
+@import 'header.less';

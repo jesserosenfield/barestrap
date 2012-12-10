@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+/* =============================================================================
+	Fonts
+   ========================================================================== */
+
+@font-face {
+	font-family: 'me';
+	src: url('assets/fonts/me.eot');
+	src: url('assets/fonts/me.eot?#iefix') format('embedded-opentype'),
+		url('assets/fonts/me.svg#est') format('svg'),
+		url('assets/fonts/me.woff') format('woff'),
+		url('assets/fonts/me.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* =============================================================================
+	Less
+   ========================================================================== */
+   
+@line: 24;
+@font-size: 16;
+@em: @font-size*1em;
+
+@em8: 8 * 1em;
+@em9: 9 * 1em;
+@em10: 10 * 1em;
+@em11: 11 * 1em;
+@em12: 12 * 1em;
+@em13: 13 * 1em;
+@em14: 14 * 1em;
+@em15: 15 * 1em;
+@em16: 16 * 1em;
+@em17: 17 * 1em;
+@em18: 18 * 1em;
+@em20: 20 * 1em;
+@em22: 22 * 1em;
+@em24: 24 * 1em;
+@em25: 25 * 1em;
+@em29: 29 * 1em;
+@em30: 30 * 1em;
+@em36: 36 * 1em;
+@em40: 40 * 1em;
+@em42: 42 * 1em;
+@em50: 50 * 1em;
+@em62: 62 * 1em;
+@em66: 66 * 1em;
+@em80: 80 * 1em;
+@em98: 98 * 1em;
+@em100: 100 * 1em;
+@em130: 130 * 1em;
+@em150: 150 * 1em;
+@em200: 200 * 1em;
+
+@import 'reset.less';
+
+.border-radius (@radius: 5px) {
+	-wekit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	border-radius: @radius;
+}
+
+.round-corner-tl (@radius) {
+	-moz-border-radius-topleft: @radius;
+	-webkit-border-top-left-radius: @radius;
+	border-top-left-radius: @radius;
+
+}
+
+.round-corner-tr (@radius) {
+	-moz-border-radius-topright: @radius;
+	-webkit-border-top-right-radius: @radius;
+	border-top-right-radius: @radius;
+}
+
+.round-corner-bl (@radius) {
+	-moz-border-radius-bottomleft: @radius;
+	-webkit-border-bottom-left-radius: @radius;
+	border-bottom-left-radius: @radius;
+}
+
+.round-corner-br (@radius) {
+	-moz-border-radius-bottomright: @radius;
+	-webkit-border-bottom-right-radius: @radius;
+	border-bottom-right-radius: @radius;
+}
+
+.transition(@type: all, @seconds: 0.6s, @ease: ease, @important) {
+	-webkit-transition: @type @seconds @ease @important;
+	-moz-transition: @type @seconds @ease @important;
+	-o-transition: @type @seconds @ease @important;
+	-ms-transition: @type @seconds @ease @important;
+	transition: @type @seconds @ease @important;
+}
+
+.opacity(@opacity) {	
+	opacity: @opacity;
+	-moz-opacity: @opacity;
+}
+
+
+/* =============================================================================
+	Type
+   ========================================================================== */
+
+.ic-left:before {float: left; margin-right: 5px}
+.ic-right:before {float: right; margin-left: 5px}
+
+[class^="ic-"]:before, 
+[class*=" ic-"]:before,
+.ic-icon,
+canvas {
+	font-family: 'me';
+	font-style: normal;
+	speak: none;
+}
